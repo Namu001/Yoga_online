@@ -27,7 +27,7 @@ export default function YouMightLikeSection({ items, onMovieClick }) {
                 </div>
 
                 {/* Navigation Controls */}
-                <div className="flex gap-3">
+                <div className="hidden md:flex gap-3">
                     <button
                         onClick={() => scroll('left')}
                         className="p-3 rounded-full border border-white/10 hover:bg-white/10 transition-colors text-white backdrop-blur-md"

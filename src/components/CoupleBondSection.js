@@ -27,7 +27,7 @@ export default function CoupleBondSection({ items, onMovieClick }) {
                 </div>
 
                 {/* Navigation Controls */}
-                <div className="flex gap-3">
+                <div className="hidden md:flex gap-3">
                     <button
                         onClick={() => scroll('left')}
                         className="p-3 rounded-full border border-white/10 hover:bg-white/10 transition-colors text-white backdrop-blur-md"
@@ -46,7 +46,7 @@ export default function CoupleBondSection({ items, onMovieClick }) {
             {/* Cards Section */}
             <div
                 ref={scrollContainerRef}
-                className="w-full grid grid-cols-2 md:flex gap-4 md:gap-6 md:overflow-x-auto pb-4 md:pb-8 pt-2 md:scrollbar-hide md:scroll-smooth"
+                className="w-full grid grid-cols-2 md:flex gap-4 md:gap-6 md:overflow-x-auto pb-4 md:pb-8 pt-2 scrollbar-hide md:scroll-smooth"
             >
                 {items.map((item, index) => (
                     <div key={index} className="w-full md:w-auto md:shrink-0">

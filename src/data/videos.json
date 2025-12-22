@@ -502,29 +502,28 @@
                         "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
-                       {
+                    {
                         "title": "Inner Peace",
                         "image": "thumbnails/S7.png",
                         "duration": "00:35 mins",
                         "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
-        
-                       {
+                    {
                         "title": "Inner Peace",
                         "image": "thumbnails/S8.png",
                         "duration": "00:35 mins",
                         "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
-                       {
+                    {
                         "title": "Inner Peace",
                         "image": "thumbnails/S9.png",
                         "duration": "00:35 mins",
                         "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
-                       {
+                    {
                         "title": "Inner Peace",
                         "image": "thumbnails/S10.png",
                         "duration": "00:35 mins",
@@ -544,28 +543,28 @@
                         "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
-                     {
+                    {
                         "title": "Final Reach",
                         "image": "thumbnails/S12.png",
                         "duration": "00:40 mins",
                         "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
-                     {
+                    {
                         "title": "Final Reach",
                         "image": "thumbnails/S13.png",
                         "duration": "00:40 mins",
                         "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
-                     {
+                    {
                         "title": "Final Reach",
                         "image": "thumbnails/S14.png",
                         "duration": "00:40 mins",
                         "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
-                     {
+                    {
                         "title": "Final Reach",
                         "image": "thumbnails/S15.png",
                         "duration": "00:40 mins",
@@ -573,6 +572,121 @@
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     }
                 ]
+            }
+        ]
+    },
+    "spicyEpisodes": [
+        {
+            "title": "Leisurely Yoga",
+            "image": "thumbnails/S1.png",
+            "duration": "00:30 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
+        },
+        {
+            "title": "Zazen Collective",
+            "image": "thumbnails/S2.png",
+            "duration": "00:43 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
+        },
+        {
+            "title": "Flying Fish",
+            "image": "thumbnails/S3.png",
+            "duration": "00:45 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
+        },
+        {
+            "title": "Transit Space",
+            "image": "thumbnails/S4.png",
+            "duration": "00:37 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
+        }
+    ],
+    "top9ThisWeek": [
+        {
+            "title": "Naughty Anna",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Steamy Moves",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Slinky Sasha",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Lovesick",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Tender Thighs",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Passion Pricks",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Morning Juice",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Lovey-Dovey",
+            "duration": "00:35 mins"
+        },
+        {
+            "title": "Crazy Shot",
+            "duration": "00:35 mins"
+        }
+    ],
+    "latestSeries": {
+        "featured": {
+            "title": "The Ancient Art",
+            "image": "thumbnails/9.png",
+            "duration": "00:35 mins",
+            "description": "Dive into yoga for holistic health. Through a blend of physical postures (asanas) and breath control (pranayama), it reduces stress, improves balance, and fosters a peaceful internal state.",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
+        },
+        "list": [
+            {
+                "title": "Summer Delight",
+                "image": "thumbnails/SR1.png",
+                "duration": "00:41 mins"
+            },
+            {
+                "title": "Unlock The Piece",
+                "image": "thumbnails/SR2.png",
+                "duration": "00:39 mins"
+            },
+            {
+                "title": "The Last Level",
+                "image": "thumbnails/SR3.png",
+                "duration": "00:42 mins"
+            },
+            {
+                "title": "The Sunrise",
+                "image": "thumbnails/SR4.png",
+                "duration": "00:34 mins"
+            },
+            {
+                "title": "The octave pose",
+                "image": "thumbnails/SR5.png",
+                "duration": "00:45 mins"
+            },
+            {
+                "title": "The Next Gen",
+                "image": "thumbnails/SR6.png",
+                "duration": "00:30 mins"
+            },
+            {
+                "title": "Choosen One",
+                "image": "thumbnails/SR7.png",
+                "duration": "00:32 mins"
+            },
+            {
+                "title": "Real Moves",
+                "image": "thumbnails/SR8.png",
+                "duration": "00:42 mins"
             }
         ]
     }

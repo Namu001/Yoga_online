@@ -57,9 +57,55 @@ export default function HeroSection({ videos }) {
                 ))}
             </div>
 
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent z-10" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
 
-            <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 flex items-center gap-2 md:gap-4 z-30">
+            {/* Content Overlay */}
+            <div className="absolute inset-0 z-20 flex flex-col justify-center px-6 md:px-16 lg:px-24">
+                <div className="max-w-3xl">
+                    <div
+                        key={`content-${currentIndex}`}
+                        className="animate-fadeInRight transition-all duration-700"
+                    >
+                        {/* Subtitle / Badge */}
+                        <div className="inline-flex items-center gap-2 mb-4">
+                            <div className="h-[1px] w-6 md:w-8 bg-[#00AEEF]/60" />
+                            <span className="text-[#00AEEF] text-[10px] md:text-sm font-black tracking-[0.4em] uppercase">
+                                Exclusive Premiere
+                            </span>
+                        </div>
+
+                        {/* Title */}
+                        <h1 className="text-white text-4xl md:text-7xl lg:text-8xl font-black leading-tight mb-4 tracking-tighter uppercase">
+                            {videos[currentIndex].title}
+                        </h1>
+
+                        {/* Gradient Underline */}
+                        <div className="h-1.5 w-32 bg-gradient-to-r from-[#00AEEF] to-transparent rounded-full opacity-60 mb-8" />
+
+                        {/* Description */}
+                        <p className="text-gray-300 text-sm md:text-xl max-w-2xl leading-relaxed mb-10 line-clamp-3 md:line-clamp-none">
+                            {videos[currentIndex].description}
+                        </p>
+
+                        {/* Additional Meta Tags */}
+                        {videos[currentIndex].tags && (
+                            <div className="flex flex-wrap gap-2 md:gap-4">
+                                {videos[currentIndex].tags.map((tag, i) => (
+                                    <span
+                                        key={tag}
+                                        className="glass px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[10px] md:text-xs font-bold text-white uppercase tracking-wider border border-white/10"
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+
+            <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 flex items-center gap-2 md:gap-4 z-40">
                 <div className="flex gap-2">
                     <button
                         onClick={() =>
@@ -101,6 +147,22 @@ export default function HeroSection({ videos }) {
                     />
                 ))}
             </div>
+
+            <style jsx>{`
+                .animate-fadeInRight {
+                    animation: fadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                }
+                @keyframes fadeInRight {
+                    from {
+                        opacity: 0;
+                        transform: translateX(-40px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            `}</style>
         </div>
     );
 }

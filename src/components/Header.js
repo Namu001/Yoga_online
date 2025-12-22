@@ -6,11 +6,13 @@ export default function Header() {
   return (
     <header className="relative flex items-center justify-between px-4 md:px-12 py-6 sticky top-0 z-50">
 
-      {/* ================= LEFT: LOGO + SEARCH ================= */}
       <div className="flex items-center gap-3 md:gap-4 flex-shrink-0">
-        {/* Logo */}
-        <div className="glass px-4 py-2 rounded-full">
-          <span className="text-lg font-semibold text-white">Yoga</span>
+        <div className="flex items-center cursor-pointer hover:opacity-80 transition-opacity">
+          <img
+            src="/logo/logo.png"
+            alt="Logo"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </div>
 
         <div className="hidden md:flex max-w-[200px] lg:max-w-[250px]">

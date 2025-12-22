@@ -11,6 +11,9 @@ import DirtyDiscovery from '@/components/DirtyDiscovery';
 import CoupleBondSection from '@/components/CoupleBondSection';
 import CapturedMomentsSection from '@/components/CapturedMomentsSection';
 import DesirableEpisodeSection from '@/components/DesirableEpisodeSection';
+import SpicyEpisodesSection from '@/components/SpicyEpisodesSection';
+import Top9Section from '@/components/Top9Section';
+import LatestSeriesSection from '@/components/LatestSeriesSection';
 import VideoModal from '@/components/VideoModal';
 import Footer from '@/components/Footer';
 import videosData from '@/data/videos.json';
@@ -68,6 +71,23 @@ export default function Home() {
               items={videosData.newReleases}
               onMovieClick={handleVideoSelect}
             />
+
+            <SpicyEpisodesSection
+              items={videosData.spicyEpisodes}
+              onMovieClick={handleVideoSelect}
+            />
+
+            <div className="flex flex-col lg:flex-row gap-12">
+              <div className="lg:w-[400px]">
+                <Top9Section items={videosData.top9ThisWeek} />
+              </div>
+              <div className="flex-1">
+                <LatestSeriesSection
+                  data={videosData.latestSeries}
+                  onMovieClick={handleVideoSelect}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Footer */}
