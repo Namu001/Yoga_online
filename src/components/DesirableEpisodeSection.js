@@ -44,11 +44,11 @@ export default function DesirableEpisodeSection({ items, onMovieClick }) {
 
             <div
                 ref={scrollContainerRef}
-                className="w-full grid grid-cols-2 md:flex gap-4 md:gap-6 md:overflow-x-auto pb-4 md:pb-8 pt-2 scrollbar-hide md:scroll-smooth"
+                className="w-full grid grid-cols-1 md:flex gap-4 md:gap-6 md:overflow-x-auto pb-4 md:pb-8 pt-2 scrollbar-hide md:scroll-smooth"
             >
                 {items.map((item, index) => (
                     <div key={index} className="w-full md:w-auto md:shrink-0">
-                        <MovieCard {...item} onClick={() => onMovieClick && onMovieClick(item)} />
+                        <MovieCard {...item} onClick={() => onMovieClick && onMovieClick(item)} variant="landscape" />
                     </div>
                 ))}
             </div>

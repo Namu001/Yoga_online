@@ -26,14 +26,14 @@ export default function SpicyEpisodesSection({ items, onMovieClick }) {
                     </div>
                     <div
                         ref={scrollRef}
-                        className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-4 pt-8"
+                        className="grid grid-cols-1 lg:flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide lg:scroll-smooth pb-4 pt-8"
                     >
                         {items.map((item, index) => (
-                            <div key={index} className="w-[180px] md:w-[220px] shrink-0">
+                            <div key={index} className="w-full lg:w-[320px] lg:shrink-0">
                                 <MovieCard
                                     {...item}
                                     onClick={() => onMovieClick && onMovieClick(item)}
-                                    size="normal"
+                                    variant="landscape"
                                 />
                             </div>
                         ))}
@@ -47,7 +47,7 @@ export default function SpicyEpisodesSection({ items, onMovieClick }) {
                     </h2>
 
                     {/* Navigation Arrows */}
-                    <div className="flex justify-center lg:justify-end gap-3">
+                    <div className="hidden lg:flex justify-center lg:justify-end gap-3">
                         <button
                             onClick={() => scroll('left')}
                             className="p-3 rounded-full border border-white/10 hover:bg-white/10 transition-colors text-white backdrop-blur-md"

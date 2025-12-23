@@ -1,5 +1,5 @@
 {
-    "heroVideos": [
+    "heroSection": [
         {
             "title": "FOUNDATION",
             "description": "A complex saga of humans scattered on planets throughout the galaxy all living under the rule of the Galactic Empire. Dr Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses around them.",
@@ -34,7 +34,7 @@
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         }
     ],
-    "continueWatching": [
+    "mostSensationalSection": [
         {
             "title": "Silo",
             "image": "thumbnails/1.png",
@@ -168,7 +168,7 @@
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         }
     ],
-    "youMightLike": [
+    "topEroticSection": [
         {
             "title": "Luck",
             "image": "thumbnails/12.png",
@@ -278,7 +278,7 @@
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         }
     ],
-    "trendingTV": [
+    "coupleBondSection": [
         {
             "title": "Severance",
             "image": "thumbnails/18.png",
@@ -400,10 +400,10 @@
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         }
     ],
-    "newReleases": [
+    "desirableEpisodeSection": [
         {
             "title": "Killers of the Flower Moon",
-            "image": "https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?w=500&h=750&fit=crop",
+            "image": "thumbnails/P1.png",
             "category": "Crime",
             "duration": "3h 26m",
             "description": "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one - until the FBI steps in to unravel the mystery.",
@@ -415,7 +415,7 @@
         },
         {
             "title": "Napoleon",
-            "image": "https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?w=500&h=750&fit=crop",
+            "image": "thumbnails/P2.png",
             "category": "History",
             "duration": "2h 38m",
             "description": "A look at the military commander's origins and his swift, ruthless climb to emperor, viewed through the prism of his addictive and often volatile relationship with his wife and one true love, Josephine.",
@@ -427,7 +427,91 @@
         },
         {
             "title": "The Killer",
-            "image": "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=500&h=750&fit=crop",
+            "image": "thumbnails/P3.png",
+            "category": "Action",
+            "duration": "1h 58m",
+            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "tags": [
+                "Action",
+                "Thriller"
+            ],
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+            "title": "The Killer",
+            "image": "thumbnails/P4.png",
+            "category": "Action",
+            "duration": "1h 58m",
+            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "tags": [
+                "Action",
+                "Thriller"
+            ],
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+            "title": "The Killer",
+            "image": "thumbnails/P5.png",
+            "category": "Action",
+            "duration": "1h 58m",
+            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "tags": [
+                "Action",
+                "Thriller"
+            ],
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+            "title": "The Killer",
+            "image": "thumbnails/P6.png",
+            "category": "Action",
+            "duration": "1h 58m",
+            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "tags": [
+                "Action",
+                "Thriller"
+            ],
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+            "title": "The Killer",
+            "image": "thumbnails/P7.png",
+            "category": "Action",
+            "duration": "1h 58m",
+            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "tags": [
+                "Action",
+                "Thriller"
+            ],
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+            "title": "The Killer",
+            "image": "thumbnails/P8.png",
+            "category": "Action",
+            "duration": "1h 58m",
+            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "tags": [
+                "Action",
+                "Thriller"
+            ],
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+            "title": "The Killer",
+            "image": "thumbnails/P9.png",
+            "category": "Action",
+            "duration": "1h 58m",
+            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
+            "tags": [
+                "Action",
+                "Thriller"
+            ],
+            "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+        },
+        {
+            "title": "The Killer",
+            "image": "thumbnails/P10.png",
             "category": "Action",
             "duration": "1h 58m",
             "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
@@ -438,7 +522,7 @@
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         }
     ],
-    "dirtyDiscovery": {
+    "dirtyDiscoverySection": {
         "badge": "Discover the Unknown",
         "title": "Dirty",
         "subtitle": "Discovery",
@@ -446,7 +530,7 @@
         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4",
         "poster": "/images/dirty_discovery_bg.png"
     },
-    "capturedMoments": {
+    "capturedMomentsSection": {
         "title": "Arousing & Pleasurable Captured Moments Click to Watch!",
         "backgroundImage": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2040&auto=format&fit=crop",
         "seasons": [
@@ -575,33 +659,57 @@
             }
         ]
     },
-    "spicyEpisodes": [
+    "spicyEpisodesSection": [
         {
             "title": "Leisurely Yoga",
-            "image": "thumbnails/S1.png",
+            "image": "thumbnails/F1.png",
             "duration": "00:30 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Zazen Collective",
-            "image": "thumbnails/S2.png",
+            "image": "thumbnails/F2.png",
             "duration": "00:43 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
         },
         {
             "title": "Flying Fish",
-            "image": "thumbnails/S3.png",
+            "image": "thumbnails/F3.png",
             "duration": "00:45 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
         },
         {
             "title": "Transit Space",
-            "image": "thumbnails/S4.png",
+            "image": "thumbnails/F4.png",
+            "duration": "00:37 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
+        },
+        {
+            "title": "Transit Space",
+            "image": "thumbnails/F5.png",
+            "duration": "00:37 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
+        },
+        {
+            "title": "Transit Space",
+            "image": "thumbnails/F6.png",
+            "duration": "00:37 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
+        },
+        {
+            "title": "Transit Space",
+            "image": "thumbnails/F7.png",
+            "duration": "00:37 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
+        },
+        {
+            "title": "Transit Space",
+            "image": "thumbnails/F8.png",
             "duration": "00:37 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         }
     ],
-    "top9ThisWeek": [
+    "top9Section": [
         {
             "title": "Naughty Anna",
             "duration": "00:35 mins"
@@ -639,7 +747,7 @@
             "duration": "00:35 mins"
         }
     ],
-    "latestSeries": {
+    "latestSeriesSection": {
         "featured": {
             "title": "The Ancient Art",
             "image": "thumbnails/9.png",

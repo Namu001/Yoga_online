@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import MovieCard from './MovieCard';
 
-export default function YouMightLikeSection({ items, onMovieClick }) {
+export default function TopEroticSection({ items, onMovieClick }) {
     const scrollContainerRef = useRef(null);
 
     const scroll = (direction) => {
@@ -20,7 +20,7 @@ export default function YouMightLikeSection({ items, onMovieClick }) {
             {/* Header Section */}
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div className="max-w-2xl">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-3 leading-tight text-white">You might like</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-3 leading-tight text-white">Top Erotic Watch Now!</h2>
                     <p className="text-gray-400 text-base leading-relaxed">
                         Personalized recommendations based on your viewing history and preferences.
                     </p>

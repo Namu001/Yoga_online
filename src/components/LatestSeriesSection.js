@@ -11,61 +11,68 @@ export default function LatestSeriesSection({ data, onMovieClick }) {
     return (
         <div className="flex flex-col h-full">
             {/* Header */}
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-8">
                 <h2 className="text-2xl font-bold text-white tracking-tight">Latest Series</h2>
-                <span className="text-[#00AEEF] text-xs font-bold uppercase tracking-widest">Today</span>
-            </div>
-
-            {/* Featured Item */}
-            <div className="bg-white/5 border border-white/10 rounded-[30px] p-6 mb-8 group overflow-hidden">
-                <div className="flex flex-col md:flex-row gap-6 items-center">
-                    <div className="w-[180px] h-[250px] shrink-0 overflow-hidden rounded-2xl relative">
-                        <img
-                            src={featured.image}
-                            alt={featured.title}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
-                        <div className="absolute top-2 left-2 bg-red-500 text-white text-[8px] font-black uppercase px-2 py-0.5 rounded-sm">
-                            New Launch
-                        </div>
-                    </div>
-                    <div className="flex-1">
-                        <span className="text-[10px] text-gray-500 uppercase tracking-widest mb-1 italic block">
-                            {featured.duration},
-                        </span>
-                        <h3 className="text-3xl font-black text-white mb-4 uppercase tracking-tighter">
-                            {featured.title}
-                        </h3>
-                        <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-4">
-                            {featured.description}
-                        </p>
-                        <button
-                            onClick={() => onMovieClick && onMovieClick(featured)}
-                            className="bg-[#00AEEF] hover:bg-[#00AEEF]/80 text-white font-black text-xs px-8 py-3 rounded-lg transition-all flex items-center gap-2 uppercase tracking-wider"
-                        >
-                            Watch Now
-                            <Play size={14} fill="currentColor" />
-                        </button>
-                    </div>
+                <div className="flex items-center gap-2">
+                    <span className="text-[#00AEEF] text-[11px] font-black uppercase tracking-wider">Today</span>
                 </div>
             </div>
 
-            {/* Mini List Grid */}
-            <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+            {/* Featured Section */}
+            <div className="flex flex-col md:flex-row gap-8 mb-8 md:mb-12">
+                {/* Featured Poster - Mobile: 176x264px, Desktop: Large Portrait */}
+                <div
+                    className="w-[176px] h-[264px] md:w-[240px] md:h-[360px] shrink-0 rounded-2xl overflow-hidden relative cursor-pointer group shadow-2xl"
+                    onClick={() => onMovieClick && onMovieClick(featured)}
+                >
+                    <img
+                        src={featured.image}
+                        alt={featured.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute top-2 left-2 bg-red-600 text-[9px] font-black text-white px-2 py-0.5 rounded uppercase tracking-wider">
+                        New Launch
+                    </div>
+                </div>
+
+                {/* Featured Content */}
+                <div className="flex-1 flex flex-col justify-center">
+                    <span className="text-[10px] text-gray-500 font-bold mb-1 block">
+                        {featured.duration},
+                    </span>
+                    <h3 className="text-2xl md:text-4xl font-black text-white mb-4 uppercase tracking-tight leading-tight">
+                        {featured.title}
+                    </h3>
+                    <p className="hidden md:block text-gray-400 text-sm leading-relaxed mb-8 line-clamp-6">
+                        {featured.description}
+                    </p>
+                    <button
+                        onClick={() => onMovieClick && onMovieClick(featured)}
+                        className="bg-[#00AEEF] hover:bg-[#00AEEF]/80 text-white font-black text-[10px] md:text-[11px] w-full md:w-fit px-10 py-4 rounded uppercase tracking-widest transition-all shadow-lg"
+                    >
+                        Watch Now
+                    </button>
+                </div>
+            </div>
+
+            {/* List Grid: All Devices: Portrait Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-4 md:gap-x-12 gap-y-8 md:gap-y-10">
                 {list.map((item, index) => (
                     <div
                         key={index}
-                        className="flex items-center gap-4 group cursor-pointer"
+                        className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-6 border-0 md:border-b border-white/5 cursor-pointer group pb-4"
                         onClick={() => onMovieClick && onMovieClick(item)}
                     >
-                        <div className="w-[60px] h-[80px] shrink-0 rounded-lg overflow-hidden border border-white/10">
-                            <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                        {/* Thumbnail: Unified Portrait (2:3) */}
+                        <div className="w-[80px] h-[120px] md:w-[100px] md:h-[150px] shrink-0 rounded-xl overflow-hidden border border-white/5 shadow-xl">
+                            <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         </div>
-                        <div className="flex flex-col min-w-0">
-                            <span className="text-[8px] text-gray-500 uppercase tracking-widest mb-1 italic">
-                                {item.duration},
+
+                        <div className="flex flex-col min-w-0 md:py-2">
+                            <span className="text-[10px] md:text-[11px] text-gray-500 font-bold mb-1 opacity-80 uppercase tracking-wide">
+                                {item.duration}
                             </span>
-                            <h4 className="text-white font-bold text-sm line-clamp-1 group-hover:text-[#00AEEF] transition-colors">
+                            <h4 className="text-white font-black text-xs md:text-base line-clamp-2 md:line-clamp-1 group-hover:text-[#00AEEF] transition-all tracking-tight leading-tight uppercase">
                                 {item.title}
                             </h4>
                         </div>
