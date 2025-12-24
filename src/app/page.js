@@ -131,11 +131,11 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-12" id="series">
-                  <div className="lg:w-[400px]">
+                <div className="flex flex-col gap-12" id="series">
+                  <div className="w-full">
                     <Top9Section items={videosData.top9Section} />
                   </div>
-                  <div className="flex-1">
+                  <div className="w-full">
                     <LatestSeriesSection
                       data={videosData.latestSeriesSection}
                       onMovieClick={handleVideoSelect}
