@@ -33,7 +33,7 @@ export default function HeroSection({ videos }) {
     };
 
     return (
-        <div className="relative w-full h-[50vh] md:h-[85vh] min-h-[400px] md:min-h-[600px] rounded-[20px] md:rounded-[40px] overflow-hidden">
+        <div className="relative w-full h-[50vh] md:h-[85vh] min-h-[400px] md:min-h-[600px] overflow-hidden">
 
             <div className="absolute inset-0 bg-black">
                 {videos.map((video, index) => (

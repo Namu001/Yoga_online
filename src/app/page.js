@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 /* Sidebar removed */
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
@@ -15,6 +15,7 @@ import Top9Section from '@/components/Top9Section';
 import LatestSeriesSection from '@/components/LatestSeriesSection';
 import MovieCard from '@/components/MovieCard';
 import VideoModal from '@/components/VideoModal';
+import LoginModal from '@/components/LoginModal';
 import Footer from '@/components/Footer';
 import videosData from '@/data/videos.json';
 
@@ -22,6 +23,15 @@ export default function Home() {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+
+  useEffect(() => {
+    // Show login modal after a short delay on mount
+    const timer = setTimeout(() => {
+      setIsLoginModalOpen(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleVideoSelect = (video) => {
     setSelectedVideo(video);
@@ -51,13 +61,13 @@ export default function Home() {
   return (
     <div className="flex h-screen bg-[#0f0f13] text-white overflow-hidden">
 
-      <main className="flex-1 mx-auto flex flex-col relative z-10 w-full max-w-[1600px] h-full">
+      <main className="flex-1 mx-auto flex flex-col relative z-10 w-full h-full">
         <Header onSearch={setSearchQuery} />
 
-        <div className="flex-1 flex flex-col gap-10 overflow-y-auto pb-10 md:pb-20 scrollbar-hide px-4 md:px-12 scroll-smooth">
+        <div className="flex-1 flex flex-col gap-10 overflow-y-auto pb-10 md:pb-20 scrollbar-hide scroll-smooth">
 
           {searchQuery ? (
-            <div className="py-10">
+            <div className="py-10 px-4 md:px-12">
               <h2 className="text-3xl font-bold mb-8">Search Results for "{searchQuery}"</h2>
               {filteredVideos.length > 0 ? (
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
@@ -82,7 +92,7 @@ export default function Home() {
                 <HeroSection videos={videosData.heroSection} />
               </div>
 
-              <div className="flex flex-col gap-12">
+              <div className="flex flex-col gap-12 px-4 md:px-12">
                 <div id="sensational">
                   <MostSensationalSection
                     title="Most Sensational Hot Yoga Watch Now!"
@@ -146,7 +156,9 @@ export default function Home() {
             </>
           )}
 
-          <Footer />
+          <div className="px-4 md:px-12">
+            <Footer />
+          </div>
         </div>
       </main>
 
@@ -156,6 +168,11 @@ export default function Home() {
           onClose={() => setIsModalOpen(false)}
         />
       )}
+
+      <LoginModal
+        isOpen={isLoginModalOpen}
+        onClose={() => setIsLoginModalOpen(false)}
+      />
 
       <div className="fixed top-0 left-0 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="fixed bottom-0 right-0 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
