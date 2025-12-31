@@ -1,188 +1,110 @@
 {
     "heroSection": [
         {
-            "title": "FOUNDATION",
-            "description": "A complex saga of humans scattered on planets throughout the galaxy all living under the rule of the Galactic Empire. Dr Hari Seldon and his loyal followers attempt to preserve their culture as the galaxy collapses around them.",
+            "title": "The Art of Hot Yoga",
+            "description": "A refined practice rooted in heat, breath, and precision. Experience a modern flow that strengthens the body, sharpens focus, and leaves you grounded long after you leave the studio.",
             "image": "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop",
-            "tags": [
-                "Suspense",
-                "Thriller",
-                "2h 30m"
-            ],
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
         },
         {
-            "title": "DUNE: PART TWO",
-            "description": "Paul Atreides unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.",
+            "title": "Where Heat Meets Control",
+            "description": "Step into the heat and reconnect with your body. Our hot yoga classes are crafted to sculpt strength, improve mobility, and cultivate deep mental clarity—one intentional movement at a time.",
             "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=2070&auto=format&fit=crop",
-            "tags": [
-                "Sci-Fi",
-                "Adventure",
-                "2h 46m"
-            ],
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
         },
         {
-            "title": "OPPENHEIMER",
-            "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+            "title": "Feel the Heat. Own the Movement.",
+            "description": "TA dynamic hot yoga experience that builds strength, flexibility, and mental resilience—set in a calm, modern studio environment.",
             "image": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=2070&auto=format&fit=crop",
-            "tags": [
-                "Biography",
-                "Drama",
-                "3h 00m"
-            ],
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         }
     ],
     "mostSensationalSection": [
         {
-            "title": "Silo",
+            "title": "Fascinating Stretch",
             "image": "thumbnails/1.png",
-            "category": "Season 1",
-            "duration": "Episode 5",
-            "description": "In a ruined and toxic future, a community exists in a giant underground silo that plunges hundreds of stories deep.",
-            "tags": [
-                "Sci-Fi",
-                "Drama"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
         },
         {
-            "title": "Dark Season",
+            "title": "Transformation like Never Before",
             "image": "thumbnails/2.png",
             "category": "Sci-Fi",
             "duration": "Episode 2",
-            "description": "A family saga with a supernatural twist, set in a German town, where the disappearance of two young children exposes the relationships among four families.",
-            "tags": [
-                "Mystery",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "Diving Deep",
             "image": "thumbnails/3.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "Mental Magic Moves",
             "image": "thumbnails/4.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "The zero size figures",
             "image": "thumbnails/5.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "Energy Lift",
             "image": "thumbnails/10.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "The Lifestyle Journey",
             "image": "thumbnails/6.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "Chakra Cleanse",
             "image": "thumbnails/7.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "The Calming Duo",
             "image": "thumbnails/11.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "The Lifestyle",
             "image": "thumbnails/8.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "The After Party",
+            "title": "The Ancient Art",
             "image": "thumbnails/9.png",
             "category": "Comedy",
             "duration": "32min left",
-            "description": "A murder-mystery comedy set at a high school reunion afterparty. Each of the eight episodes features a retelling of the same night told through a different character's perspective.",
-            "tags": [
-                "Comedy",
-                "Crime"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         }
     ],
     "topEroticSection": [
         {
-            "title": "Luck",
+            "title": "Destress",
             "image": "thumbnails/12.png",
-            "category": "Animation",
             "duration": "1h 45m",
-            "description": "The story of Sam Greenfield, the unluckiest person in the world.",
-            "tags": [
-                "Animation",
-                "Adventure"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
         },
         {
-            "title": "Grey Hound",
+            "title": "Couplets",
             "image": "thumbnails/13.png",
             "category": "Drama",
             "duration": "1h 31m",
@@ -194,331 +116,169 @@
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "Ghosted",
+            "title": "Blue Sea",
             "image": "thumbnails/14.png",
-            "category": "Comedy",
             "duration": "1h 56m",
-            "description": "Cole falls head over heels for enigmatic Sadie, but then makes the shocking discovery that she's a secret agent.",
-            "tags": [
-                "Action",
-                "Romance"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
         },
         {
-            "title": "Cherry",
+            "title": "In The Rocks",
             "image": "thumbnails/15.png",
-            "category": "Thriller",
             "duration": "2h 21m",
-            "description": "Cherry drifts from college dropout to army medic in Iraq - anchored only by his true love, Emily.",
-            "tags": [
-                "Crime",
-                "Drama"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
         },
         {
-            "title": "Tetris",
+            "title": "Tantrik",
             "image": "thumbnails/16.png",
-            "category": "Biography",
             "duration": "1h 58m",
-            "description": "Based on the true story of the high-stakes legal battle to secure the intellectual property rights to Tetris.",
-            "tags": [
-                "Biography",
-                "History"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
-            "title": "Tetris",
+            "title": "Back 2 Basics",
             "image": "thumbnails/17.png",
-            "category": "Biography",
             "duration": "1h 58m",
-            "description": "Based on the true story of the high-stakes legal battle to secure the intellectual property rights to Tetris.",
-            "tags": [
-                "Biography",
-                "History"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
-            "title": "Tetris",
+            "title": "The Twister",
             "image": "thumbnails/18.png",
-            "category": "Biography",
             "duration": "1h 58m",
-            "description": "Based on the true story of the high-stakes legal battle to secure the intellectual property rights to Tetris.",
-            "tags": [
-                "Biography",
-                "History"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
-            "title": "Tetris",
+            "title": "Body Bliss",
             "image": "thumbnails/19.png",
-            "category": "Biography",
             "duration": "1h 58m",
-            "description": "Based on the true story of the high-stakes legal battle to secure the intellectual property rights to Tetris.",
-            "tags": [
-                "Biography",
-                "History"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
-            "title": "Tetris",
+            "title": "Relaxation",
             "image": "thumbnails/20.png",
-            "category": "Biography",
             "duration": "1h 58m",
-            "description": "Based on the true story of the high-stakes legal battle to secure the intellectual property rights to Tetris.",
-            "tags": [
-                "Biography",
-                "History"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         }
     ],
     "coupleBondSection": [
         {
-            "title": "Severance",
+            "title": "The Twister",
             "image": "thumbnails/18.png",
-            "category": "Sci-Fi",
             "duration": "Season 1",
-            "description": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives.",
-            "tags": [
-                "Thriller",
-                "Drama"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         },
         {
-            "title": "Ted Lasso",
+            "title": "Bend It Over",
             "image": "thumbnails/22.png",
-            "category": "Comedy",
             "duration": "Season 3",
-            "description": "American college football coach Ted Lasso heads to London to manage AFC Richmond, a struggling English Premier League football team.",
-            "tags": [
-                "Comedy",
-                "Sports"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "In The Studio",
             "image": "thumbnails/21.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "Body Bliss",
             "image": "thumbnails/19.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "Back 2 Basics",
             "image": "thumbnails/17.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "Relaxation",
             "image": "thumbnails/20.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "The Lifestyle",
             "image": "thumbnails/8.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "The Ancient Art",
             "image": "thumbnails/9.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "Energy Lift",
             "image": "thumbnails/10.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
-            "title": "The Morning Show",
+            "title": "Diving Deep",
             "image": "thumbnails/3.png",
-            "category": "Drama",
             "duration": "Season 3",
-            "description": "An inside look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-            "tags": [
-                "Drama",
-                "News"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         }
     ],
     "desirableEpisodeSection": [
         {
-            "title": "Killers of the Flower Moon",
+            "title": "Joy Shine",
             "image": "thumbnails/P1.png",
-            "category": "Crime",
             "duration": "3h 26m",
-            "description": "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one - until the FBI steps in to unravel the mystery.",
-            "tags": [
-                "Crime",
-                "Drama"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
-            "title": "Napoleon",
+            "title": "Sunsetters",
             "image": "thumbnails/P2.png",
-            "category": "History",
             "duration": "2h 38m",
-            "description": "A look at the military commander's origins and his swift, ruthless climb to emperor, viewed through the prism of his addictive and often volatile relationship with his wife and one true love, Josephine.",
-            "tags": [
-                "History",
-                "War"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Vitality",
             "image": "thumbnails/P3.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Energy Love & Passion",
             "image": "thumbnails/P4.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Divine Bliss",
             "image": "thumbnails/P5.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Grove",
             "image": "thumbnails/P6.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Equinox",
             "image": "thumbnails/P7.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Carpe Dieaa",
             "image": "thumbnails/P8.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Tranquil Studio",
             "image": "thumbnails/P9.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
-            "title": "The Killer",
+            "title": "Gentel Time",
             "image": "thumbnails/P10.png",
-            "category": "Action",
             "duration": "1h 58m",
-            "description": "After a fateful near-miss, an assassin battles his employers, and himself, on an international manhunt he insists isn't personal.",
-            "tags": [
-                "Action",
-                "Thriller"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         }
     ],
@@ -542,35 +302,30 @@
                         "title": "Golden Hour",
                         "image": "thumbnails/S1.png",
                         "duration": "00:33 mins",
-                        "description": "Unlock your potential with yoga. From dynamic flows to restorative stretches, it builds endurance.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
                     },
                     {
                         "title": "Asthetic",
                         "image": "thumbnails/S2.png",
                         "duration": "00:44 mins",
-                        "description": "Experience the serenity of yoga. This timeless discipline enhances physical flexibility and muscular clarity.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
                     {
                         "title": "Crave With Me",
                         "image": "thumbnails/S3.png",
                         "duration": "00:34 mins",
-                        "description": "Unlock your potential with yoga from dynamic flows to restorative stretches. It builds endurance.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
                     {
                         "title": "Here with Me",
                         "image": "thumbnails/S4.png",
                         "duration": "00:42 mins",
-                        "description": "Yoga offers a holistic path to health. Combining precise postures with mindful breathing, it reduces stress.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
                     },
                     {
                         "title": "Enlighten Within",
                         "image": "thumbnails/S5.png",
                         "duration": "00:32 mins",
-                        "description": "Embark on a yoga journey to rejuvenate your being. It's a practice that stretches your body, expands your breath.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     }
                 ]
@@ -580,38 +335,33 @@
                 "label": "Season 2",
                 "episodes": [
                     {
-                        "title": "Inner Peace",
+                        "title": "Astral Space",
                         "image": "thumbnails/S6.png",
                         "duration": "00:35 mins",
-                        "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
                     {
-                        "title": "Inner Peace",
+                        "title": "Arch",
                         "image": "thumbnails/S7.png",
                         "duration": "00:35 mins",
-                        "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
                     {
-                        "title": "Inner Peace",
+                        "title": "Flying Fish",
                         "image": "thumbnails/S8.png",
                         "duration": "00:35 mins",
-                        "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
                     {
-                        "title": "Inner Peace",
+                        "title": "Transit Space",
                         "image": "thumbnails/S9.png",
                         "duration": "00:35 mins",
-                        "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     },
                     {
-                        "title": "Inner Peace",
+                        "title": "Just Evolve",
                         "image": "thumbnails/S10.png",
                         "duration": "00:35 mins",
-                        "description": "Discover the tranquility of mind and body through meditative movements.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
                     }
                 ]
@@ -621,38 +371,33 @@
                 "label": "Season 3",
                 "episodes": [
                     {
-                        "title": "Final Reach",
+                        "title": "Expanding Universe",
                         "image": "thumbnails/S11.png",
                         "duration": "00:40 mins",
-                        "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
                     {
-                        "title": "Final Reach",
+                        "title": "Hot Spot",
                         "image": "thumbnails/S12.png",
                         "duration": "00:40 mins",
-                        "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
                     {
-                        "title": "Final Reach",
+                        "title": "Studio Harmony",
                         "image": "thumbnails/S13.png",
                         "duration": "00:40 mins",
-                        "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
                     {
-                        "title": "Final Reach",
+                        "title": "Little Treasures",
                         "image": "thumbnails/S14.png",
                         "duration": "00:40 mins",
-                        "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     },
                     {
-                        "title": "Final Reach",
+                        "title": "Bliss Spritual",
                         "image": "thumbnails/S15.png",
                         "duration": "00:40 mins",
-                        "description": "Push your limits and find stability in the most challenging poses.",
                         "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
                     }
                 ]
@@ -685,25 +430,25 @@
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
-            "title": "Transit Space",
+            "title": "Little Treasures",
             "image": "thumbnails/F5.png",
             "duration": "00:37 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
-            "title": "Transit Space",
+            "title": "Just Evolve",
             "image": "thumbnails/F6.png",
             "duration": "00:37 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
-            "title": "Transit Space",
+            "title": "Expanding Universe",
             "image": "thumbnails/F7.png",
             "duration": "00:37 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
-            "title": "Transit Space",
+            "title": "Tranquil Studio",
             "image": "thumbnails/F8.png",
             "duration": "00:37 mins",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
@@ -712,39 +457,48 @@
     "top9Section": [
         {
             "title": "Naughty Anna",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Steamy Moves",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Slinky Sasha",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Lovesick",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Tender Thighs",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Passion Pricks",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Morning Juice",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Lovey-Dovey",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         },
         {
             "title": "Crazy Shot",
-            "duration": "00:35 mins"
+            "duration": "00:35 mins",
+            "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         }
     ],
     "latestSeriesSection": {

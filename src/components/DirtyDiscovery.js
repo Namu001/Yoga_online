@@ -3,7 +3,7 @@
 import React from 'react';
 import { Play, ArrowRight } from 'lucide-react';
 
-export default function DirtyDiscovery({ data }) {
+export default function DirtyDiscovery({ data, onMovieClick }) {
     if (!data) return null;
 
     const { badge, title, subtitle, description, videoUrl, poster } = data;
@@ -53,7 +53,10 @@ export default function DirtyDiscovery({ data }) {
 
                         {/* Call to Action Buttons */}
                         <div className="flex flex-wrap gap-3 md:gap-4 pt-2 md:pt-4">
-                            <button className="group/btn relative px-6 py-3 md:px-8 md:py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-sm md:text-base rounded-xl md:rounded-2xl transition-all duration-300 flex items-center gap-2 overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]">
+                            <button
+                                onClick={() => onMovieClick && onMovieClick(data)}
+                                className="group/btn relative px-6 py-3 md:px-8 md:py-4 bg-cyan-500 hover:bg-cyan-400 text-black font-bold text-sm md:text-base rounded-xl md:rounded-2xl transition-all duration-300 flex items-center gap-2 overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.3)] hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]"
+                            >
                                 <span className="relative z-10 uppercase">Watch Now</span>
                                 <Play className="relative z-10 w-4 h-4 md:w-5 md:h-5 fill-current" />
                                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700" />

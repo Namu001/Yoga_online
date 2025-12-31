@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { X, Phone, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function LoginModal({ isOpen, onClose }) {
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -69,7 +70,7 @@ export default function LoginModal({ isOpen, onClose }) {
                 </form>
 
                 <p className="mt-8 text-center text-sm text-gray-500">
-                    By continuing, you agree to our <a href="/terms" className="text-purple-400 hover:underline">Terms of Service</a> and <a href="/privacy" className="text-purple-400 hover:underline">Privacy Policy</a>.
+                    By continuing, you agree to our <Link href="/terms" className="text-purple-400 hover:underline">Terms of Service</Link> and <Link href="/privacy" className="text-purple-400 hover:underline">Privacy Policy</Link>.
                 </p>
             </div>
         </div>

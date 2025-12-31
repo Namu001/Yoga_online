@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Volume2, VolumeX } from "lucide-react";
 
-export default function HeroSection({ videos }) {
+export default function HeroSection({ videos, onMovieClick }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isMuted, setIsMuted] = useState(true);
     const videoRef = useRef(null);
@@ -35,7 +35,7 @@ export default function HeroSection({ videos }) {
     return (
         <div className="relative w-full h-[50vh] md:h-[85vh] min-h-[400px] md:min-h-[600px] overflow-hidden">
 
-            <div className="absolute inset-0 bg-black">
+            <div className="absolute inset-0 bg-black cursor-pointer" onClick={() => onMovieClick && onMovieClick(videos[currentIndex])}>
                 {videos.map((video, index) => (
                     <div
                         key={index}
@@ -57,11 +57,11 @@ export default function HeroSection({ videos }) {
                 ))}
             </div>
 
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent z-10" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent z-10 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 pointer-events-none" />
 
             {/* Content Overlay */}
-            <div className="absolute inset-0 z-20 flex flex-col justify-center px-6 md:px-16 lg:px-24">
+            <div className="absolute inset-0 z-20 flex flex-col justify-center px-6 md:px-16 lg:px-24 pointer-events-none">
                 <div className="max-w-3xl">
                     <div
                         key={`content-${currentIndex}`}
@@ -76,7 +76,7 @@ export default function HeroSection({ videos }) {
                         </div>
 
                         {/* Title */}
-                        <h1 className="text-white text-4xl md:text-7xl lg:text-8xl font-black leading-tight mb-4 tracking-tighter uppercase">
+                        <h1 className="text-white text-4xl md:text-7xl lg:text-8xl font-black leading-tight mb-4 tracking-tighter uppercase drop-shadow-2xl">
                             {videos[currentIndex].title}
                         </h1>
 
@@ -84,7 +84,7 @@ export default function HeroSection({ videos }) {
                         <div className="h-1.5 w-32 bg-gradient-to-r from-[#00AEEF] to-transparent rounded-full opacity-60 mb-8" />
 
                         {/* Description */}
-                        <p className="text-gray-300 text-sm md:text-xl max-w-2xl leading-relaxed mb-10 line-clamp-3 md:line-clamp-none">
+                        <p className="text-gray-300 text-sm md:text-xl max-w-2xl leading-relaxed mb-10 line-clamp-3 md:line-clamp-none drop-shadow-md">
                             {videos[currentIndex].description}
                         </p>
 

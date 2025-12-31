@@ -1,135 +1,103 @@
 "use client";
 
 import React, { useState } from 'react';
+import { Trophy, Play, TrendingUp } from 'lucide-react';
 
-export default function Top9Section({ items }) {
+export default function Top9Section({ items, onMovieClick }) {
     const [activeTab, setActiveTab] = useState('latest');
 
-    // Split top 3 and the rest
-    const podiumItems = items.slice(0, 3);
-    const runnerUps = items.slice(3, 9);
+    // Sort logic placeholder (currently just passing through or reversing for demo)
+    const displayItems = activeTab === 'latest' ? items : [...(items || [])].reverse();
+
+    if (!items) return null;
 
     return (
-        <div className="w-full h-full flex flex-col gap-6">
-            {/* Header Rail */}
-            <div className="flex justify-between items-end px-2">
-                <div>
-                     <h2 className="text-3xl md:text-6xl font-black text-white italic tracking-tighter transform -skew-x-6">
-                        LEADERBOARD
+        <div className="w-full flex flex-col gap-8">
+            {/* Header with Tabs */}
+            <div className="flex items-center justify-between px-2">
+                <div className="flex items-center gap-3">
+                    <Trophy className="w-6 h-6 text-[#FFD700]" />
+                    <h2 className="text-2xl font-black text-white uppercase tracking-tighter">
+                        Leaderboard
                     </h2>
-                     <div className="h-1 w-full bg-[#00AEEF] mt-2 transform -skew-x-12"></div>
                 </div>
-               
-                <div className="flex gap-2">
-                    {['Latest', 'Most Watched'].map((tab) => {
-                        const id = tab.toLowerCase().replace(' ', '');
-                        const isActive = activeTab === id;
-                        return (
-                            <button
-                                key={id}
-                                onClick={() => setActiveTab(id)}
-                                className={`px-4 py-2 text-[10px] font-black uppercase tracking-widest border border-white/10 transition-all clip-path-slant ${
-                                    isActive 
-                                    ? 'bg-[#00AEEF] text-black border-[#00AEEF]' 
-                                    : 'bg-black/40 text-gray-500 hover:text-white hover:border-white/30'
-                                }`}
-                                style={{
-                                    clipPath: 'polygon(10% 0, 100% 0, 90% 100%, 0% 100%)'
-                                }}
-                            >
-                                {tab}
-                            </button>
-                        );
-                    })}
+
+                {/* Minimal Tabs */}
+                <div className="flex bg-white/5 rounded-full p-1 border border-white/10">
+                    <button
+                        onClick={() => setActiveTab('latest')}
+                        className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${activeTab === 'latest' ? 'bg-white text-black shadow-lg' : 'text-gray-400 hover:text-white'}`}
+                    >
+                        Latest
+                    </button>
+                    <button
+                        onClick={() => setActiveTab('watched')}
+                        className={`px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${activeTab === 'watched' ? 'bg-white text-black shadow-lg' : 'text-gray-400 hover:text-white'}`}
+                    >
+                        Most Watched
+                    </button>
                 </div>
             </div>
 
-            {/* Horizontal Scroll Container */}
-            <div className="flex-1 w-full overflow-x-auto pb-8 scrollbar-hide">
-                <div className="flex gap-4 md:gap-8 min-w-max px-4">
-                    
-                    {/* PODIUM (Top 3) */}
-                    <div className="flex gap-4">
-                        {podiumItems.map((item, index) => (
-                            <div 
-                                key={index} 
-                                className={`relative group cursor-pointer transition-all duration-300 hover:-translate-y-2
-                                    ${index === 0 ? 'w-[240px] h-[340px] md:w-[280px] md:h-[380px]' : 'w-[200px] h-[280px] md:w-[240px] md:h-[320px] mt-auto'}
-                                `}
-                            >
-                                {/* Card Frame */}
-                                <div className="absolute inset-0 bg-[#1A1A20] border border-white/10 skew-y-1 rounded-sm overflow-hidden group-hover:border-[#00AEEF]/50 transition-colors shadow-2xl">
-                                    {/* Image */}
-                                    <div className="absolute inset-0 opacity-60 group-hover:opacity-40 transition-opacity">
-                                         {/* Placeholder for actual image if available in 'item' later, using gradient for now */}
-                                        <div className="w-full h-full bg-gradient-to-br from-gray-800 to-black relative">
-                                             {/* If item has image, we would use it here. Assuming text-only for now based on previous code */}
-                                        </div>
-                                    </div>
-                                    
-                                    {/* Big Rank Number */}
-                                    <span className="absolute -bottom-10 -right-4 text-[180px] font-black leading-none text-white/5 z-0 select-none group-hover:text-[#00AEEF]/10 transition-colors">
-                                        {index + 1}
-                                    </span>
+            {/* LIST LAYOUT (No Big Cards) */}
+            <div className="flex flex-col gap-2">
+                {displayItems?.map((item, index) => {
+                    const rank = index + 1;
+                    const isTop1 = rank === 1;
+                    const isTop3 = rank <= 3;
 
-                                    {/* Content */}
-                                    <div className="absolute inset-x-0 bottom-0 p-6 flex flex-col gap-2 z-10 bg-gradient-to-t from-black via-black/80 to-transparent">
-                                        <div className="flex items-center gap-2">
-                                            <span className="bg-[#00AEEF] text-black text-[9px] font-bold px-1.5 py-0.5 uppercase tracking-wider transform -skew-x-12">
-                                                Rank {index + 1}
-                                            </span>
-                                            <span className="text-gray-400 text-[10px] font-mono">{item.duration}</span>
-                                        </div>
-                                        <h3 className="text-xl font-bold text-white uppercase leading-none group-hover:text-[#00AEEF] transition-colors">
-                                            {item.title}
-                                        </h3>
-                                    </div>
+                    // Color Schemes for Ranks
+                    let rankColor = "text-gray-500";
+                    let glowColor = "";
+                    let icon = null;
+
+                    if (rank === 1) {
+                        rankColor = "text-[#FFD700]"; // Gold
+                        glowColor = "shadow-[0_0_15px_rgba(255,215,0,0.15)] border-[#FFD700]/30";
+                        icon = <Trophy className="w-4 h-4 text-[#FFD700]" />;
+                    } else if (rank === 2) {
+                        rankColor = "text-[#C0C0C0]"; // Silver
+                        glowColor = "border-white/20";
+                    } else if (rank === 3) {
+                        rankColor = "text-[#CD7F32]"; // Bronze
+                        glowColor = "border-[#CD7F32]/20";
+                    } else {
+                        glowColor = "border-white/5 hover:border-white/10";
+                    }
+
+                    return (
+                        <div
+                            key={index}
+                            onClick={() => onMovieClick && onMovieClick(item)}
+                            className={`group relative flex items-center justify-between p-4 rounded-xl border bg-[#15151A] cursor-pointer transition-all duration-300 hover:bg-[#1E1E24] hover:scale-[1.01] hover:shadow-lg ${glowColor}`}
+                        >
+                            <div className="flex items-center gap-6">
+                                {/* Rank Number */}
+                                <div className={`text-2xl font-black italic w-8 text-center ${rankColor} opacity-80 group-hover:opacity-100 transition-opacity`}>
+                                    {rank}
                                 </div>
-                                
-                                {/* Crown for #1 */}
-                                {index === 0 && (
-                                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-yellow-500 animate-bounce">
-                                        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11h-14zm14 1v2H5v-2h14z"/></svg>
-                                    </div>
-                                )}
+
+                                {/* Title & Duration */}
+                                <div className="flex flex-col">
+                                    <h3 className={`font-bold text-white uppercase text-sm md:text-base tracking-wide flex items-center gap-2 group-hover:text-[#00AEEF] transition-colors ${isTop1 ? 'text-lg' : ''}`}>
+                                        {item.title}
+                                        {icon}
+                                    </h3>
+                                    <span className="text-[10px] text-gray-400 font-mono flex items-center gap-1">
+                                        {item.duration}
+                                        {isTop3 && <span className="w-1 h-1 rounded-full bg-white/30 ml-2"></span>}
+                                        {isTop3 && <span className="text-[#00AEEF] text-[9px] uppercase">Trending</span>}
+                                    </span>
+                                </div>
                             </div>
-                        ))}
-                    </div>
 
-                    {/* Divider */}
-                    <div className="w-[1px] bg-white/10 mx-4 h-full self-center"></div>
-
-                    {/* RUNNER UPS (Rolling Horizontal List) */}
-                    <div className="flex gap-3 items-center">
-                        {runnerUps.map((item, i) => {
-                            const rank = i + 4;
-                            return (
-                                <div 
-                                    key={rank}
-                                    className="w-[200px] h-[140px] bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 transition-all group cursor-pointer relative overflow-hidden flex flex-col justify-between p-4"
-                                >
-                                     <span className="absolute top-[-10px] right-[-10px] text-[80px] font-black text-white/5 leading-none group-hover:text-white/10 transition-colors">
-                                        {rank}
-                                    </span>
-                                    
-                                    <div className="relative z-10">
-                                         <h4 className="text-sm font-bold text-white line-clamp-2 uppercase group-hover:text-[#00AEEF] transition-colors">
-                                            {item.title}
-                                        </h4>
-                                    </div>
-
-                                    <div className="relative z-10 flex justify-between items-end border-t border-white/5 pt-2">
-                                        <span className="text-[9px] text-gray-500 font-mono">{item.duration}</span>
-                                        <div className="w-5 h-5 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-[#00AEEF] group-hover:border-[#00AEEF] transition-all">
-                                            <svg className="w-2 h-2 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div>
-
-                </div>
+                            {/* Play Action */}
+                            <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/50 group-hover:text-black group-hover:bg-white group-hover:border-white transition-all">
+                                <Play className="w-4 h-4 fill-current ml-0.5" />
+                            </div>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     );

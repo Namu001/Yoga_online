@@ -89,7 +89,7 @@ export default function Home() {
           ) : (
             <>
               <div id="home">
-                <HeroSection videos={videosData.heroSection} />
+                <HeroSection videos={videosData.heroSection} onMovieClick={handleVideoSelect} />
               </div>
 
               <div className="flex flex-col gap-12 px-4 md:px-12">
@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
 
                 <div id="discovery">
-                  <DirtyDiscovery data={videosData.dirtyDiscoverySection} />
+                  <DirtyDiscovery data={videosData.dirtyDiscoverySection} onMovieClick={handleVideoSelect} />
                 </div>
 
                 <div id="couples">
@@ -143,7 +143,7 @@ export default function Home() {
 
                 <div className="flex flex-col gap-12" id="series">
                   <div className="w-full">
-                    <Top9Section items={videosData.top9Section} />
+                    <Top9Section items={videosData.top9Section} onMovieClick={handleVideoSelect} />
                   </div>
                   <div className="w-full">
                     <LatestSeriesSection
