@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
 
 export default function MostSensationalSection({ title, description, items, onMovieClick }) {
     const scrollRef = useRef(null);
@@ -46,12 +46,10 @@ export default function MostSensationalSection({ title, description, items, onMo
                                             alt={item.title}
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                                         />
-                                        {/* Play Icon Overlay */}
-                                        <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity">
-                                            <div className="w-8 h-8 rounded-full bg-white/90 flex items-center justify-center">
-                                                <svg className="w-4 h-4 text-black ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                                                    <path d="M8 5v14l11-7z" />
-                                                </svg>
+                                        {/* Play Icon Overlay - Bottom Right */}
+                                        <div className="absolute bottom-1 right-1 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                            <div className="w-7 h-7 rounded-full bg-[#00AEEF] flex items-center justify-center shadow-[0_0_10px_rgba(0,174,239,0.5)]">
+                                                <Play size={12} fill="currentColor" className="text-white translate-x-0.5" />
                                             </div>
                                         </div>
                                     </div>
@@ -62,7 +60,7 @@ export default function MostSensationalSection({ title, description, items, onMo
                                             {item.title}
                                         </h4>
                                         <p className="text-xs text-gray-400 truncate">
-                                            {item.subtitle || `Season ${item.season || 1}`}
+                                            {item.duration || item.subtitle || `Season ${item.season || 1}`}
                                         </p>
                                     </div>
                                 </div>
@@ -101,57 +99,52 @@ export default function MostSensationalSection({ title, description, items, onMo
                         {rightSideItems.map((item, index) => (
                             <div
                                 key={`right-${index}`}
-                                className="w-full md:w-auto md:shrink-0 group cursor-pointer"
+                                className="w-full md:w-[240px] md:shrink-0 group cursor-pointer"
                                 onClick={() => onMovieClick && onMovieClick(item)}
                             >
-                                <div className="relative rounded-2xl overflow-hidden bg-gray-900 aspect-[2/3] md:h-[340px] transform hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                                    {/* Poster Image */}
+                                {/* Image Container */}
+                                <div className="relative rounded-2xl overflow-hidden bg-gray-900 aspect-[2/3] transform group-hover:scale-[1.02] transition-all duration-300 shadow-xl group-hover:shadow-[0_20px_40px_rgba(0,174,239,0.15)]">
                                     <img
                                         src={item.thumbnail || item.image}
                                         alt={item.title}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
 
-                                    {/* Gradient Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
-
-                                    {/* Content Info */}
-                                    <div className="absolute bottom-0 left-0 right-0 p-3 md:p-5">
-                                        <h3 className="text-base md:text-xl font-bold text-white mb-1 md:mb-2 line-clamp-2">
-                                            {item.title}
-                                        </h3>
-                                        <p className="text-[10px] md:text-sm text-gray-300 line-clamp-1 md:line-clamp-2 mb-2 md:mb-3">
-                                            {item.description || item.subtitle}
-                                        </p>
-
-                                        {/* Meta Info */}
-                                        <div className="flex items-center gap-2 md:gap-3 text-[10px] md:text-xs text-gray-400">
-                                            {item.year && <span>{item.year}</span>}
-                                            {item.rating && (
-                                                <>
-                                                    <span>•</span>
-                                                    <span className="flex items-center gap-1">
-                                                        ⭐ {item.rating}
-                                                    </span>
-                                                </>
-                                            )}
-                                        </div>
-                                    </div>
-
-                                    {/* Play Button - Center */}
-                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-white/95 flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform">
-                                            <svg className="w-4 h-4 md:w-6 md:h-6 text-black ml-0.5 md:ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
+                                    {/* Play Button - Bottom Right of Image */}
+                                    <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                        <div className="bg-[#00AEEF] text-white p-2.5 rounded-full shadow-[0_0_15px_rgba(0,174,239,0.5)] hover:scale-110 transition-transform">
+                                            <Play fill="currentColor" size={16} className="translate-x-0.5" />
                                         </div>
                                     </div>
 
                                     {/* Quality Badge - Top Right */}
                                     <div className="absolute top-3 right-3">
-                                        <div className="px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-sm border border-white/20">
-                                            <span className="text-xs font-bold text-white">HD</span>
+                                        <div className="px-2 py-0.5 rounded-md bg-black/60 backdrop-blur-sm border border-white/10">
+                                            <span className="text-[10px] font-bold text-white uppercase tracking-wider">HD</span>
                                         </div>
+                                    </div>
+                                </div>
+
+                                {/* Content Info - Below Image */}
+                                <div className="mt-4 px-1">
+                                    <h3 className="text-sm md:text-base font-bold text-white mb-2 line-clamp-1 group-hover:text-[#00AEEF] transition-colors duration-300">
+                                        {item.title}
+                                    </h3>
+
+                                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] md:text-xs text-gray-400">
+                                        {item.category && <span className="text-[#00AEEF]/80">{item.category}</span>}
+                                        {item.category && item.duration && <span className="opacity-30">•</span>}
+                                        {item.duration && <span>{item.duration}</span>}
+                                        {(item.duration || item.category) && item.year && <span className="opacity-30">•</span>}
+                                        {item.year && <span>{item.year}</span>}
+                                        {item.rating && (
+                                            <>
+                                                <span className="opacity-30">•</span>
+                                                <span className="flex items-center gap-1 text-yellow-500/80">
+                                                    ★ {item.rating}
+                                                </span>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
                             </div>

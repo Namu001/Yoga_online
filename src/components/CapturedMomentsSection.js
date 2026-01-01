@@ -18,14 +18,15 @@ function ThumbnailCard({ title, image, duration, onClick }) {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-40" />
 
-                {/* Play Button - Emerges on Hover */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#00AEEF] text-white shadow-[0_0_30px_rgba(0,174,239,0.5)] transform scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 ease-out">
-                        <Play fill="currentColor" size={24} className="translate-x-0.5" />
+                {/* Play Button - Bottom Right of Image */}
+                <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <div className="bg-[#00AEEF] text-white p-2.5 rounded-full shadow-[0_0_15px_rgba(0,174,239,0.5)] hover:scale-110 transition-transform">
+                        <Play fill="currentColor" size={16} className="translate-x-0.5" />
                     </div>
                 </div>
 
-                <div className="absolute bottom-3 right-3 rounded-lg bg-black/60 px-2 py-1 text-[10px] font-bold text-white backdrop-blur-md border border-white/10">
+                {/* Duration Badge - Bottom Left (to avoid overlap with play button) */}
+                <div className="absolute bottom-3 left-3 rounded-lg bg-black/60 px-2 py-1 text-[10px] font-bold text-white backdrop-blur-md border border-white/10 group-hover:opacity-0 transition-opacity duration-300">
                     {duration}
                 </div>
             </div>
@@ -127,7 +128,6 @@ export default function CapturedMomentsSection({ data, onMovieClick }) {
                                     className="animate-fadeInLeft"
                                     style={{
                                         animationDelay: `${index * 50}ms`,
-                                        animation: 'fadeInLeft 0.6s ease-out forwards'
                                     }}
                                 >
                                     <ThumbnailCard
@@ -141,18 +141,7 @@ export default function CapturedMomentsSection({ data, onMovieClick }) {
                 </div>
             </div>
 
-            <style jsx>{`
-                @keyframes fadeInLeft {
-                    from {
-                        opacity: 0;
-                        transform: translateX(40px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-            `}</style>
+
         </section>
     );
 }

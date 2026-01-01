@@ -23,76 +23,67 @@
         {
             "title": "Fascinating Stretch",
             "image": "thumbnails/1.png",
+            "duration": "00:31 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
         },
         {
             "title": "Transformation like Never Before",
             "image": "thumbnails/2.png",
-            "category": "Sci-Fi",
-            "duration": "Episode 2",
+            "duration": "00:38 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "Diving Deep",
             "image": "thumbnails/3.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:33 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "Mental Magic Moves",
             "image": "thumbnails/4.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:37 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "The zero size figures",
             "image": "thumbnails/5.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:39 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "Energy Lift",
             "image": "thumbnails/10.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:43 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "The Lifestyle Journey",
             "image": "thumbnails/6.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:42 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "Chakra Cleanse",
             "image": "thumbnails/7.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:32 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "The Calming Duo",
             "image": "thumbnails/11.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:36 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "The Lifestyle",
             "image": "thumbnails/8.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:34 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "The Ancient Art",
             "image": "thumbnails/9.png",
-            "category": "Comedy",
-            "duration": "32min left",
+            "duration": "00:44 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         }
     ],
@@ -100,61 +91,56 @@
         {
             "title": "Destress",
             "image": "thumbnails/12.png",
-            "duration": "1h 45m",
+            "duration": "00:39 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
         },
         {
             "title": "Couplets",
             "image": "thumbnails/13.png",
-            "category": "Drama",
-            "duration": "1h 31m",
+            "duration": "00:42 mins",
             "description": "Early in World War II, an inexperienced U.S. Navy captain must lead an Allied convoy being stalked by a Nazi U-boat wolf pack.",
-            "tags": [
-                "War",
-                "Action"
-            ],
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Blue Sea",
             "image": "thumbnails/14.png",
-            "duration": "1h 56m",
+            "duration": "00:45 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
         },
         {
             "title": "In The Rocks",
             "image": "thumbnails/15.png",
-            "duration": "2h 21m",
+            "duration": "00:37 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
         },
         {
             "title": "Tantrik",
             "image": "thumbnails/16.png",
-            "duration": "1h 58m",
+            "duration": "00:38 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
             "title": "Back 2 Basics",
             "image": "thumbnails/17.png",
-            "duration": "1h 58m",
+            "duration": "00:32 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
             "title": "The Twister",
             "image": "thumbnails/18.png",
-            "duration": "1h 58m",
+            "duration": "00:31 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
             "title": "Body Bliss",
             "image": "thumbnails/19.png",
-            "duration": "1h 58m",
+            "duration": "00:33 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         },
         {
             "title": "Relaxation",
             "image": "thumbnails/20.png",
-            "duration": "1h 58m",
+            "duration": "00:39 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
         }
     ],
@@ -162,61 +148,61 @@
         {
             "title": "The Twister",
             "image": "thumbnails/18.png",
-            "duration": "Season 1",
+            "duration": "00:37 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         },
         {
             "title": "Bend It Over",
             "image": "thumbnails/22.png",
-            "duration": "Season 3",
+            "duration": "00:38 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
         },
         {
             "title": "In The Studio",
             "image": "thumbnails/21.png",
-            "duration": "Season 3",
+            "duration": "00:37 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "Body Bliss",
             "image": "thumbnails/19.png",
-            "duration": "Season 3",
+            "duration": "00:41 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "Back 2 Basics",
             "image": "thumbnails/17.png",
-            "duration": "Season 3",
+            "duration": "00:33 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "Relaxation",
             "image": "thumbnails/20.png",
-            "duration": "Season 3",
+            "duration": "00:31 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "The Lifestyle",
             "image": "thumbnails/8.png",
-            "duration": "Season 3",
+            "duration": "00:35 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "The Ancient Art",
             "image": "thumbnails/9.png",
-            "duration": "Season 3",
+            "duration": "00:37 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "Energy Lift",
             "image": "thumbnails/10.png",
-            "duration": "Season 3",
+            "duration": "00:37 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         },
         {
             "title": "Diving Deep",
             "image": "thumbnails/3.png",
-            "duration": "Season 3",
+            "duration": "00:41 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
         }
     ],
@@ -224,61 +210,61 @@
         {
             "title": "Joy Shine",
             "image": "thumbnails/P1.png",
-            "duration": "3h 26m",
+            "duration": "00:41 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
         },
         {
             "title": "Sunsetters",
             "image": "thumbnails/P2.png",
-            "duration": "2h 38m",
+            "duration": "00:35 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
         },
         {
             "title": "Vitality",
             "image": "thumbnails/P3.png",
-            "duration": "1h 58m",
+            "duration": "00:36 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Energy Love & Passion",
             "image": "thumbnails/P4.png",
-            "duration": "1h 58m",
+            "duration": "00:33 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Divine Bliss",
             "image": "thumbnails/P5.png",
-            "duration": "1h 58m",
+            "duration": "00:42 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Grove",
             "image": "thumbnails/P6.png",
-            "duration": "1h 58m",
+            "duration": "00:35 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Equinox",
             "image": "thumbnails/P7.png",
-            "duration": "1h 58m",
+            "duration": "00:32 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Carpe Dieaa",
             "image": "thumbnails/P8.png",
-            "duration": "1h 58m",
+            "duration": "00:45 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Tranquil Studio",
             "image": "thumbnails/P9.png",
-            "duration": "1h 58m",
+            "duration": "00:35 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         },
         {
             "title": "Gentel Time",
             "image": "thumbnails/P10.png",
-            "duration": "1h 58m",
+            "duration": "00:43 mins",
             "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
         }
     ],

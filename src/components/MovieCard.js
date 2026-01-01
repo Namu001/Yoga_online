@@ -1,6 +1,6 @@
 import { Play, MoreHorizontal } from 'lucide-react';
 
-export default function MovieCard({ title, image, category, duration, onClick, size = 'normal', fluid = false, variant = 'portrait' }) {
+export default function MovieCard({ title, image, category, duration, year, rating, onClick, size = 'normal', fluid = false, variant = 'portrait' }) {
     const isLandscape = variant === 'landscape';
 
     // Default portrait dimensions
@@ -17,32 +17,49 @@ export default function MovieCard({ title, image, category, duration, onClick, s
     }
 
     return (
-        <div onClick={onClick} className={`relative ${finalDimensions} rounded-2xl overflow-hidden group cursor-pointer flex-shrink-0 bg-[#1a1a1e]`}>
-            <img
-                src={image}
-                alt={title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
+        <div className={`group cursor-pointer ${fluid ? 'w-full' : 'flex-shrink-0'}`}>
+            <div onClick={onClick} className={`relative ${finalDimensions} rounded-2xl overflow-hidden bg-[#1a1a1e] transform group-hover:scale-[1.02] transition-all duration-300 shadow-xl group-hover:shadow-[0_20px_40px_rgba(0,174,239,0.15)]`}>
+                <img
+                    src={image}
+                    alt={title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-            <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300">
-                <button className="glass p-2 rounded-full hover:bg-white/20">
-                    <MoreHorizontal size={16} />
-                </button>
+                <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0 duration-300">
+                    <button className="glass p-2 rounded-full hover:bg-white/20">
+                        <MoreHorizontal size={16} />
+                    </button>
+                </div>
+
+                {/* Play Button - Bottom Right of Image */}
+                <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <div className="bg-[#00AEEF] text-white p-2 md:p-2.5 rounded-full shadow-[0_0_15px_rgba(0,174,239,0.5)] hover:scale-110 transition-transform">
+                        <Play fill="currentColor" size={size === 'small' ? 12 : 16} className="translate-x-0.5" />
+                    </div>
+                </div>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className={`font-bold ${size === 'small' ? 'text-sm' : 'text-base md:text-lg'} mb-1 leading-tight line-clamp-1`}>{title}</h3>
-                <div className="flex items-center justify-between text-[10px] md:text-xs text-gray-400">
-                    <div className="flex gap-2">
-                        {category && <span>{category}</span>}
-                        {category && duration && <span>•</span>}
-                        <span>{duration}</span>
-                    </div>
-                    <button className="bg-[#00AEEF] text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 shadow-[0_0_15px_rgba(0,174,239,0.5)]">
-                        <Play fill="currentColor" size={12} className="translate-x-0.5" />
-                    </button>
+            {/* Info Below Card */}
+            <div className="mt-3 md:mt-4 px-1">
+                <h3 className={`font-bold text-white line-clamp-1 mb-1 group-hover:text-[#00AEEF] transition-colors duration-300 ${size === 'small' ? 'text-xs' : 'text-sm md:text-base'}`}>
+                    {title}
+                </h3>
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] md:text-xs text-gray-400">
+                    {category && <span className="text-[#00AEEF]/80">{category}</span>}
+                    {category && (duration || year || rating) && <span className="opacity-30">•</span>}
+                    {duration && <span>{duration}</span>}
+                    {(duration || category) && year && <span className="opacity-30">•</span>}
+                    {year && <span>{year}</span>}
+                    {rating && (
+                        <>
+                            <span className="opacity-30">•</span>
+                            <span className="flex items-center gap-1 text-yellow-500/80">
+                                ★ {rating}
+                            </span>
+                        </>
+                    )}
                 </div>
             </div>
         </div>
