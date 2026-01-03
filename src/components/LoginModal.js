@@ -28,7 +28,10 @@ export default function LoginModal({ isOpen, onClose }) {
 
     return (
         <div className={`fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-            <div className={`relative w-full max-w-md p-8 bg-[#1a1a20]/90 border border-white/10 rounded-3xl shadow-2xl transition-all duration-300 transform ${isVisible ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}`}>
+            <div
+                className={`relative w-full max-w-md p-8 bg-[#1a1a20]/90 border border-white/10 rounded-3xl shadow-2xl transition-all duration-300 transform ${isVisible ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}`}
+                onClick={(e) => e.stopPropagation()}
+            >
 
                 <button
                     onClick={onClose}

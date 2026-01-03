@@ -34,8 +34,7 @@ export default function Home() {
   }, []);
 
   const handleVideoSelect = (video) => {
-    setSelectedVideo(video);
-    setIsModalOpen(true);
+    setIsLoginModalOpen(true);
   };
 
   // Improved search filtering logic
@@ -59,7 +58,14 @@ export default function Home() {
     : [];
 
   return (
-    <div className="flex h-screen bg-[#0f0f13] text-white overflow-hidden">
+    <div
+      className="flex h-screen bg-[#0f0f13] text-white overflow-hidden"
+      onClick={() => {
+        if (!isLoginModalOpen) {
+          setIsLoginModalOpen(true);
+        }
+      }}
+    >
 
       <main className="flex-1 mx-auto flex flex-col relative z-10 w-full h-full">
         <Header onSearch={setSearchQuery} />

@@ -1,20 +1,14 @@
 {
     "heroSection": [
         {
-            "title": "The Art of Hot Yoga",
-            "description": "A refined practice rooted in heat, breath, and precision. Experience a modern flow that strengthens the body, sharpens focus, and leaves you grounded long after you leave the studio.",
             "image": "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U4.mp4"
         },
         {
-            "title": "Where Heat Meets Control",
-            "description": "Step into the heat and reconnect with your body. Our hot yoga classes are crafted to sculpt strength, improve mobility, and cultivate deep mental clarity—one intentional movement at a time.",
             "image": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=2070&auto=format&fit=crop",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U2.mp4"
         },
         {
-            "title": "Feel the Heat. Own the Movement.",
-            "description": "TA dynamic hot yoga experience that builds strength, flexibility, and mental resilience—set in a calm, modern studio environment.",
             "image": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=2070&auto=format&fit=crop",
             "videoUrl": "https://watchtv4.d2cccsubmits.com/wp/assets/videos/Yoga/YogaTrailer/U1.mp4"
         }
