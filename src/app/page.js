@@ -58,14 +58,7 @@ export default function Home() {
     : [];
 
   return (
-    <div
-      className="flex h-screen bg-[#0f0f13] text-white overflow-hidden"
-      onClick={() => {
-        if (!isLoginModalOpen) {
-          setIsLoginModalOpen(true);
-        }
-      }}
-    >
+    <div className="flex h-screen bg-[#0f0f13] text-white overflow-hidden">
 
       <main className="flex-1 mx-auto flex flex-col relative z-10 w-full h-full">
         <Header onSearch={setSearchQuery} />
