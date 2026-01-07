@@ -154,10 +154,6 @@ export default function Home() {
               </div>
             </>
           )}
-
-          <div className="px-4 md:px-12">
-            <Footer />
-          </div>
         </div>
       </main>
 
