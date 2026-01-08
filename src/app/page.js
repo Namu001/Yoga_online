@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-/* Sidebar removed */
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import MostSensationalSection from '@/components/MostSensationalSection';
@@ -16,7 +15,6 @@ import LatestSeriesSection from '@/components/LatestSeriesSection';
 import MovieCard from '@/components/MovieCard';
 import VideoModal from '@/components/VideoModal';
 import LoginModal from '@/components/LoginModal';
-import Footer from '@/components/Footer';
 import videosData from '@/data/videos.json';
 
 export default function Home() {
@@ -26,7 +24,6 @@ export default function Home() {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 
   useEffect(() => {
-    // Show login modal after a short delay on mount
     const timer = setTimeout(() => {
       setIsLoginModalOpen(true);
     }, 1000);
@@ -37,7 +34,6 @@ export default function Home() {
     setIsLoginModalOpen(true);
   };
 
-  // Improved search filtering logic
   const getAllVideos = () => {
     const all = [];
     if (videosData.mostSensationalSection) all.push(...videosData.mostSensationalSection);
@@ -58,12 +54,12 @@ export default function Home() {
     : [];
 
   return (
-    <div className="flex h-screen bg-[#0f0f13] text-white overflow-hidden">
-
-      <main className="flex-1 mx-auto flex flex-col relative z-10 w-full h-full">
+    <>
+      <div className="relative min-h-screen bg-[#0f0f13] text-white">
+        
         <Header onSearch={setSearchQuery} />
 
-        <div className="flex-1 flex flex-col gap-10 overflow-y-auto pb-10 md:pb-20 scrollbar-hide scroll-smooth">
+        <div className="flex flex-col gap-10 pb-10 md:pb-20">
 
           {searchQuery ? (
             <div className="py-10 px-4 md:px-12">
@@ -155,22 +151,22 @@ export default function Home() {
             </>
           )}
         </div>
-      </main>
 
-      {isModalOpen && (
-        <VideoModal
-          video={selectedVideo}
-          onClose={() => setIsModalOpen(false)}
+        {isModalOpen && (
+          <VideoModal
+            video={selectedVideo}
+            onClose={() => setIsModalOpen(false)}
+          />
+        )}
+
+        <LoginModal
+          isOpen={isLoginModalOpen}
+          onClose={() => setIsLoginModalOpen(false)}
         />
-      )}
 
-      <LoginModal
-        isOpen={isLoginModalOpen}
-        onClose={() => setIsLoginModalOpen(false)}
-      />
-
-      <div className="fixed top-0 left-0 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] pointer-events-none" />
-      <div className="fixed bottom-0 right-0 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
-    </div>
+        <div className="fixed top-0 left-0 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] pointer-events-none -z-10" />
+        <div className="fixed bottom-0 right-0 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none -z-10" />
+      </div>
+    </>
   );
 }
